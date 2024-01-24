@@ -504,8 +504,8 @@ video {
     width: 375px;
 }
 
-.min-w-375px {
-    width: 375px;
+.min-w-345px {
+    min-width: 345px;
 }
 
 .max-w-800 {
@@ -1108,10 +1108,26 @@ video {
     object-position: left;
 }
 
+.aspect-video {
+    aspect-ratio: 16 / 9;
+}
 
 @media only screen and (min-width: 800px) {
     .md-flex {
         display: flex;
+    }
+
+    .md-ml-2 {
+        margin-left: 2rem;
+    }
+
+    .md-text-xl {
+        font-size: 1.25rem; /* 20px */
+        line-height: 1.75rem; /* 28px */
+    }
+
+    .md-object-left {
+        object-position: left;
     }
 
     .md-w-17 {
