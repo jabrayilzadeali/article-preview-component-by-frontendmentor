@@ -3,6 +3,7 @@
     --Desaturated-Dark-Blue: hsl(214, 17%, 51%);
     --Grayish-Blue: hsl(212, 23%, 69%);
     --Light-Grayish-Blue: hsl(210, 46%, 95%);
+    --White: hsl(0, 0%, 100%);
 }
 
 /* Tailwind Preflight styles start */
@@ -72,6 +73,7 @@ body {
     line-height: inherit; /* 2 */
     /* custom */
     font-family: "Manrope", sans-serif;
+    background-color: var(--Light-Grayish-Blue);
 }
 
 /*
@@ -426,7 +428,41 @@ video {
 }
 /* Tailwind Preflight styles end */
 
+.text-Very-Dark-Grayish-Blue{
+  color: var(--Very-Dark-Grayish-Blue);   
+}
+.text-Desaturated-Dark-Blue{
+    color: var(--Desaturated-Dark-Blue);   
+} 
+.text-Grayish-Blue{
+    color: var(--Grayish-Blue);
+} 
+.text-Light-Grayish-Blue{
+    color: var(--Light-Grayish-Blue);   
+} 
+
+.bg-Very-Dark-Grayish-Blue{
+    background-color: var(--Very-Dark-Grayish-Blue);   
+}
+
+.bg-Desaturated-Dark-Blue{
+    background-color: var(--Desaturated-Dark-Blue);   
+} 
+
+.bg-Grayish-Blue{
+    background-color: var(--Grayish-Blue);
+} 
+
+.bg-Light-Grayish-Blue{
+    background-color: var(--Light-Grayish-Blue);   
+} 
+
+.bg-White{
+    background-color: var(--White);   
+} 
 /* Atomic Css */
+
+
 .cursor-pointer {
     cursor: pointer;
 }
@@ -452,8 +488,36 @@ video {
     width: 5rem;
 }
 
+.w-10 {
+    width: 17rem;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.w-35 {
+    width: 35%;
+}
+
 .w-375px {
     width: 375px;
+}
+
+.min-w-375px {
+    width: 375px;
+}
+
+.max-w-800 {
+    max-width: 800px;
+}
+
+.max-w-3 {
+    max-width: 200px;
+}
+
+.max-w-10 {
+    max-width: 10rem;
 }
 
 /* height */
@@ -1016,15 +1080,41 @@ video {
     line-height: 1;
 }
 
-/* box shadow */
-/* .shadow {
-    box-shadow: 9px 9px 2px 1px var(--Black);
-}
-
-.hover-shadow:hover {
-    box-shadow: 15px 15px 2px 1px var(--Black);
-} */
-
 .transition-all {
     transition: all .5s;
+}
+
+.object-contain {
+    object-fit: contain;   
+}	
+
+.object-cover {
+    object-fit: cover;
+}	
+
+.object-fill {
+    object-fit: fill;
+}	
+
+.object-none {
+    object-fit: none;
+}
+
+.object-scale-down {
+    object-fit: scale-down;   
+}	
+
+.object-left {
+    object-position: left;
+}
+
+
+@media only screen and (min-width: 800px) {
+    .md-flex {
+        display: flex;
+    }
+
+    .md-w-17 {
+        width: 17rem;
+    }
 }
